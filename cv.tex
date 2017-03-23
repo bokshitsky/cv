@@ -1,0 +1,88 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{marvosym}
+\usepackage{fontspec}
+\usepackage{xunicode,xltxtra,url,parskip}
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage[absolute]{textpos}
+\usepackage{dashrule}
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\defaultfontfeatures{Mapping=tex-text}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\font\fb=''[cmr10]''
+
+\par{\centering{\Huge \textsc{Evgenii Bokshitskii}}\bigskip\par}
+
+Software architect and engineering leader.\\
+Experienced in leading engineering teams, building engineering culture, planning and delivering software solutions under zero-downtime requirements while supporting continuous product development.\\
+Hands-on in designing, developing, testing, monitoring, and operating backend and frontend systems. Strong expertise in building backend interactions for mobile applications.
+
+\section{Technologies}
+Java, Python, Postgres, Kafka, RabbitMQ, Cassandra/Scylla, Hadoop, Redis, Memcache, K8s, Terraform, Ansible, and various frameworks related to these technologies.
+
+
+\section{Personal Data}
+\begin{tabular}{rl}
+  \textsc{place and date of birth:} & Moscow, Russia | 07 October 1990 \\
+  \textsc{languages:} & English, Russian, Spanish, Hebrew \\
+  \textsc{email:} & \href{mailto:bokshitsky@gmail.com}{bokshitsky@gmail.com} \\
+  \textsc{phone:} & +37491576071 \\
+  \textsc{github:} & \href{https://github.com/bokshitsky}{https://github.com/bokshitsky} \\
+\end{tabular}
+
+\section{Work Experience}
+\begin{tabular}{r|p{11cm}}
+
+  \textsc{Now} & Solution architect at \textsc{Headhunter Group}, Moscow \\
+  \textsc{2016}
+  & \footnotesize{
+      Develop and support all technical and product aspects of the \href{https://hh.ru}{hh.ru} service.\newline
+      Develop engineering and product culture across the company, as well as architecture governance processes.\newline
+      As a team lead, led engineering teams responsible for job seeker functionality, employer functionality, and backend services for mobile applications.\newline
+      Created a company-wide event system that supports analytics and production requirements.\newline
+      Designed and organized the rollout of the platform authorization system.\newline
+      Introduced WebSocket-based interaction for mobile and web applications, to ensure a responsive user interface and experience.\newline
+      Designed and implemented a hot-reload system for code in a test \textsc{Kubernetes} environment, significantly accelerating delivery time for developers across the company.\newline
+  } \\\multicolumn{2}{c}{} \\
+
+  \textsc{2016} & Engineering team lead at \textsc{Boeing Russia}, Moscow \\
+  \textsc{2011} & \emph{Moscow Boeing Design Center} \\
+  & \footnotesize{
+      Led the engineering team performing structural and frequency analysis for 787-9/10 and 737 projects. Participated in onboarding and mentoring of people in the company.\newline
+      Suggested, designed and implemented software solutions for templated engineering calculations that helped to reduce calculations errors and expedite airplane certification.
+  } \\\multicolumn{2}{c}{} \\
+
+  \textsc{2010} & System administrator, Moscow \\
+  \textsc{2008} & \emph{Contract job} \\
+  & \footnotesize{
+      Performed computers setup and configuration for companies in several Moscow offices.
+  }
+\end{tabular}
+
+\section{Education}
+\begin{tabular}{r|p{11cm}}
+  \textsc{June 2013} & Masters in Mechanical Engineering \\ & \textsc{Bauman Moscow State Technical University} \\
+\end{tabular}
+
+\end{document}
