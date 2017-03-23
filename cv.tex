@@ -1,0 +1,83 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{marvosym}
+\usepackage{fontspec}
+\usepackage{xunicode,xltxtra,url,parskip}
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage[absolute]{textpos}
+\usepackage{dashrule}
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\defaultfontfeatures{Mapping=tex-text}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\hyphenation{Websocket}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\font\fb=''[cmr10]''
+
+\par{\centering{\Huge \textsc{Evgenii Bokshitskii}}\bigskip\par}
+
+Software engineer with the proficiency in backend technologies. \\
+Experienced in designing, developing, testing, monitoring, and operating of the backend and frontend systems.
+
+\section{Personal Data}
+\begin{tabular}{rl}
+  \textsc{place and date of birth:} & Moscow, Russia | 07 October 1990 \\
+  \textsc{languages:} & English, Russian, Spanish \\
+  \textsc{email:} & \href{mailto:bokshitsky@gmail.com}{bokshitsky@gmail.com} \\
+  \textsc{phone:} & +37491576071 \\
+  \textsc{github:} & \href{https://github.com/bokshitsky}{https://github.com/bokshitsky} \\
+\end{tabular}
+
+\section{Work Experience}
+\begin{tabular}{r|p{11cm}}
+
+  \textsc{Current} & Lead software engineer at \textsc{Headhunter Group}, Moscow \\
+  \textsc{July 2016} & \emph{The biggest online recruitment platform in Russia} \\
+  & \footnotesize{
+      Lead employer services and mobile applications backend team.\newline
+      Help to set up processes and make technical decisions within the team and the company. Responsible for hiring, onboarding, and mentoring of people in the engineering team.
+      Suggested and implemented new analytics system based on events-driven architecture over \textsc{Kafka}. Designed conventions for frontend and backend event tracking.
+      Support \href{https://hh.ru}{hh.ru} authorization and push notifications systems.\newline
+      Experienced in technologies: \textsc{Java}, \textsc{Python}, \textsc{Postgres}, \textsc{Cassandra}, \textsc{Kafka}, \textsc{Redis}, \textsc{RabbitMQ}, \textsc{Websocket}.
+  } \\\multicolumn{2}{c}{} \\
+
+  \textsc{July 2016} & Senior structure engineer at \textsc{Progresstech}, Moscow \\
+  \textsc{August 2011} & \emph{Boeing Company contractor at Moscow Boeing Design Center} \\
+  & \footnotesize{
+      Led the engineering team performing stress and frequency analysis for 787-9/10 and 737 projects. Participated in onboarding and mentoring of people in the company.\newline
+      Suggested, designed and implemented software solutions for templated engineering calculations that helped to reduce calculations errors and expedite airplane certification.
+  } \\\multicolumn{2}{c}{} \\
+
+  \textsc{September 2010} & System administrator assistant, Moscow \\
+  \textsc{July 2008} & \emph{Contract job} \\
+  & \footnotesize{
+      Performed computers setup and configuration for companies in several Moscow offices. Helped the system administrator to configure serverside office software.
+  }
+\end{tabular}
+
+\section{Education}
+\begin{tabular}{r|p{11cm}}
+  \textsc{June 2013} & Masters in Mechanical Engineering \\ & \textsc{Bauman Moscow State Technical University} \\
+\end{tabular}
+
+\end{document}

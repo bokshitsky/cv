@@ -1,0 +1,20 @@
+name: Generate PDF
+
+on:
+  push:
+    paths:
+      - '**/*.tex'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Docker container to generate PDF
+        run: ./build.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
